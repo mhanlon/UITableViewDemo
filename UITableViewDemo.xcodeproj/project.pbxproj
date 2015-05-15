@@ -11,7 +11,6 @@
 		859BA52B1B056088008074DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 859BA52A1B056088008074DE /* AppDelegate.m */; };
 		859BA52E1B056088008074DE /* UITableViewDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 859BA52C1B056088008074DE /* UITableViewDemo.xcdatamodeld */; };
 		859BA5311B056088008074DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859BA5301B056088008074DE /* ViewController.m */; };
-		859BA5341B056089008074DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859BA5321B056089008074DE /* Main.storyboard */; };
 		859BA5361B056089008074DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859BA5351B056089008074DE /* Images.xcassets */; };
 		859BA5391B056089008074DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 859BA5371B056089008074DE /* LaunchScreen.xib */; };
 		859BA5451B056089008074DE /* UITableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 859BA5441B056089008074DE /* UITableViewDemoTests.m */; };
@@ -36,7 +35,6 @@
 		859BA52D1B056088008074DE /* UITableViewDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UITableViewDemo.xcdatamodel; sourceTree = "<group>"; };
 		859BA52F1B056088008074DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		859BA5301B056088008074DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		859BA5331B056089008074DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		859BA5351B056089008074DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		859BA5381B056089008074DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		859BA53E1B056089008074DE /* UITableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +85,6 @@
 				859BA52A1B056088008074DE /* AppDelegate.m */,
 				859BA52F1B056088008074DE /* ViewController.h */,
 				859BA5301B056088008074DE /* ViewController.m */,
-				859BA5321B056089008074DE /* Main.storyboard */,
 				859BA5351B056089008074DE /* Images.xcassets */,
 				859BA5371B056089008074DE /* LaunchScreen.xib */,
 				859BA52C1B056088008074DE /* UITableViewDemo.xcdatamodeld */,
@@ -202,7 +199,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				859BA5341B056089008074DE /* Main.storyboard in Resources */,
 				859BA5391B056089008074DE /* LaunchScreen.xib in Resources */,
 				859BA5361B056089008074DE /* Images.xcassets in Resources */,
 			);
@@ -248,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		859BA5321B056089008074DE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				859BA5331B056089008074DE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		859BA5371B056089008074DE /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
