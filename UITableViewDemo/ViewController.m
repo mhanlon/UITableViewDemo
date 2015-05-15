@@ -29,14 +29,14 @@ static NSString* reuseableTableViewCellIdentifier = @"TableViewCell";
     self = [super init];
     if ( self )
     {
-        self.favoriteRestaurants = @[@"Ronnie's Seafood, Charlton, Mass.", @"Ronnie's Seafood, Auburn, Mass.", @"The Oyster House", @"Legal Seafood", @"Five Guys"];
+        self.favoriteRestaurants = @[@"Ronnie's Seafood, Charlton, Mass.", @"Ronnie's Seafood, Auburn, Mass.", @"Union Oyster House", @"Legal Seafood", @"Five Guys"];
         // A sort of more clear (and old) way of initializing this array would look like this:
-        // self.favoriteRestaurants = [NSArray arrayWithObjects:@"Ronnie's Seafood", @"Oyster House", @"Legal Seafood", @"Five Guys", nil];
+        // self.favoriteRestaurants = [NSArray arrayWithObjects:@"Ronnie's Seafood, Charlton, Mass.", @"Ronnie's Seafood, Auburn, Mass.", @"Union Oyster House", @"Legal Seafood", @"Five Guys", nil];
         _isInsertingNewRestaurant = NO;
         self.addButton = [UIButton buttonWithType:UIButtonTypeContactAdd];
         [self.addButton addTarget:self action:@selector(beginInsertingRestaurant:) forControlEvents:UIControlEventTouchUpInside];
         
-        self.tableView.tableFooterView = self.addButton; // Lazily add our add button to the bottom of our table view
+        self.tableView.tableFooterView = self.addButton; // Being lazy and adding our add button to the bottom of our table view
                                                          // You'd want to make this look a bit nicer than this.
         
         // TODO: Make a view which shows off the behavior of adding an item at the end of the array and the insertion method
@@ -58,12 +58,13 @@ static NSString* reuseableTableViewCellIdentifier = @"TableViewCell";
 
 - (void)addRestaurant:(id)sender
 {
-    
+    // This is where you'd insert your *other* insertion code, should you choose that challenge.
 }
 
 - (void)beginInsertingRestaurant:(id)sender
 {
-    // Toggle our editing state
+    // Toggle our editing state so we enter the editing state and then, when we press the button again,
+    // we exit the editing state.
     _isInsertingNewRestaurant = !_isInsertingNewRestaurant;
     [self.tableView setEditing:_isInsertingNewRestaurant animated:NO];
 }
@@ -137,13 +138,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
     [tableView setEditing:NO animated:YES];
 }
 
-#pragma mark -- Re-ordering your tableview rows --
+#pragma mark -- Reordering --
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return YES;
-}
-
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return YES;
 }
