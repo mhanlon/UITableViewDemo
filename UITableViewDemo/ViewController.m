@@ -29,6 +29,7 @@ static NSString* reuseableTableViewCellIdentifier = @"TableViewCell";
     self = [super init];
     if ( self )
     {
+        self.title = NSLocalizedString(@"Favorite Restaurants", nil);
         self.favoriteRestaurants = @[@"Ronnie's Seafood, Charlton, Mass.", @"Ronnie's Seafood, Auburn, Mass.", @"Union Oyster House", @"Legal Seafood", @"Five Guys"];
         // A sort of more clear (and old) way of initializing this array would look like this:
         // self.favoriteRestaurants = [NSArray arrayWithObjects:@"Ronnie's Seafood, Charlton, Mass.", @"Ronnie's Seafood, Auburn, Mass.", @"Union Oyster House", @"Legal Seafood", @"Five Guys", nil];
