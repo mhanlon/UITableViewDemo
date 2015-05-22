@@ -41,6 +41,12 @@ static NSString* reuseableTableViewCellIdentifier = @"TableViewCell";
                                                          // You'd want to make this look a bit nicer than this.
         
         // TODO: Make a view which shows off the behavior of adding an item at the end of the array and the insertion method
+        //      Right now the + button at the bottom of our tableview turns on "insertion" mode where we can insert or re-order
+        //      items in our list.
+        //      For this task, maybe make a button that simply inserts a new restaurant at the end of the list by default, without
+        //      requiring any more taps from the user.
+        //      The old button could remain, or it could turn into an 'Edit' button, or you could decide that you don't want people
+        //      to change their restaurant preference around.
     }
     return self;
 }
